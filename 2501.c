@@ -1,27 +1,27 @@
 #include <stdio.h>
 int main(void) {
-	int n;// Á¤¼ö
-	int k;// ¸î¹øÂ°
-	int i;// nÀÇ ¾à¼ö
-	int cnt=0;
+	int n;// ì •ìˆ˜
+	int k;// ëª‡ë²ˆì§¸
+	int i;// nì˜ ì•½ìˆ˜
+	int cnt=0; // ì•½ìˆ˜ ìˆ«ì ì„¸ê¸°
 	scanf("%d %d", &n, &k);
 
-	for (i = 1; i <= n; i++) //1ºÎÅÍ ½ÃÀÛ  n±îÁö
+	for (i = 1; i <= n; i++) //1ë¶€í„° ì‹œì‘  nê¹Œì§€
 	{
-			if (n% i == 0)
+			if (n% i == 0) //  nì„ ë‚˜ëˆ´ì„ ë•Œ ë‚˜ë¨¸ì§€ 0= nì˜ì•½ìˆ˜
 			{
-				cnt++;
+				cnt++; //  
 				
 				
-				if (cnt == k)
-					break;
+				if (cnt == k) 
+					break; // // cntë‘ kê°€ ê°™ì•„ ì§€ë©´ ë
 			
 			}
 			
 	}
-	if (i <= n)
+	if (i <= n) 
 		printf("%d", i);
-	else
+	else // iê°€ nê°€ í¬ë©´ 0ì¶œë ¥
 		printf("0");
 	
 
